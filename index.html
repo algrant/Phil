@@ -61,6 +61,10 @@
       <i class="fa fa-book fa-fw" aria-hidden="true"></i>
     </button>
     <input id="open-wordlist-input" class="hidden" type="file" accept=".txt"/>
+    <button id="open-targetlist" type="button" data-tooltip="Change target dictionary..." onclick="openTargetlist()">
+      <i class="fa fa-book fa-fw" aria-hidden="true"></i>
+    </button>
+    <input id="open-targetlist-input" class="hidden" type="file" accept=".txt"/>
     <button id="auto-fill" type="button" data-tooltip="Auto-fill puzzle" onclick="autoFill()">
       <i class="fa fa-magic fa-fw" aria-hidden="true"></i>
     </button>
@@ -77,6 +81,7 @@
         </div>
         <div id="across-word" class="current-word"></div>
       </div>
+      <ul id="target-across-matches" class="matches"></ul>
       <ul id="across-matches" class="matches"></ul>
     </div>
     <div class="half-sidebar">
@@ -87,6 +92,7 @@
         </div>
         <div id="down-word" class="current-word"></div>
       </div>
+      <ul id="target-down-matches" class="matches"></ul>
       <ul id="down-matches" class="matches"></ul>
     </div>
   </div>
@@ -111,6 +117,7 @@
   <script src="patterns.js"></script>
   <script src="cross.js"></script>
   <script src="wordlist.js"></script>
+  <script src="targetwordlist.js"></script>
   <script src="files.js"></script>
 </body>
 </html>

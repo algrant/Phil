@@ -198,6 +198,7 @@ class Toolbar {
       "clearFill": new Button("clear-fill"),
       "toggleSymmetry": new Button("toggle-symmetry"),
       "openWordlist": new Button("open-wordlist"),
+      "openTargetlist": new Button("open-targetlist"),
       "autoFill": new Button("auto-fill")
     }
   }
@@ -443,6 +444,7 @@ function updateUI() {
   updateGridHighlights();
   updateSidebarHighlights();
   updateMatchesUI();
+  updateTargetMatchesUI()
   updateCluesUI();
   updateInfoUI();
 }
